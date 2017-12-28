@@ -16,8 +16,8 @@ class Args():
                        help='Create a log file in the current directory')
 
         # Rate limit
-        p.add_argument('--rate', type=int,
-                       help='Delay between API calls (in seconds)')
+        p.add_argument('--rate', type=float,
+                       help='Delay between API calls (in seconds and fractions of a second)')
 
         # Type
         g_type = p.add_mutually_exclusive_group(required=True)
